@@ -1453,6 +1453,33 @@
                 </Grid>
             </StackPanel>
         </ScrollViewer>
+        <Button Grid.Row="2"
+                Grid.Column="0"
+                Click="CleanClicked"
+                Foreground="FloralWhite" 
+                Cursor="Hand"
+                FontSize="20"
+                FontWeight="Bold"
+                Margin="8">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="Border" Background="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Background, Mode=OneWay}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="Border" 
+                                    Value="DarkSlateBlue"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter Property="Background" TargetName="Border" 
+                                    Value="SteelBlue"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            Temizle
+        </Button>
         <Button Grid.Row="2" 
                 Click="ButtonBase_OnClick" 
                 Grid.Column="2" 

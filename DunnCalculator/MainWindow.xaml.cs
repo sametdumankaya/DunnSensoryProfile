@@ -18,6 +18,7 @@ namespace DunnCalculator
 
         // kayıt
         private int registration = 0;
+
         private int[] registrationIndexes =
         {
             6,
@@ -39,6 +40,7 @@ namespace DunnCalculator
 
         //araştırma
         private int seeking = 0;
+
         private int[] seekingIndexes =
         {
             8,
@@ -71,6 +73,7 @@ namespace DunnCalculator
 
         //hassasiyet
         private int sensitivity = 0;
+
         private int[] sensitivityIndexes =
         {
             3,
@@ -97,6 +100,7 @@ namespace DunnCalculator
 
         //kaçınma
         private int avoiding = 0;
+
         private int[] avoidingIndexes =
         {
             1,
@@ -132,6 +136,7 @@ namespace DunnCalculator
 
         //duyusal girdi arama
         private int sensorySeeking = 0;
+
         private int[] sensorySeekingIndexes =
         {
             8,
@@ -155,6 +160,7 @@ namespace DunnCalculator
 
         //duygusal tepki
         private int emotionallyReactive = 0;
+
         private int[] emotionallyReactiveIndexes =
         {
             92,
@@ -177,6 +183,7 @@ namespace DunnCalculator
 
         //düşük endurans / tons
         private int lowEnduranceTone = 0;
+
         private int[] lowEnduranceToneIndexes =
         {
             66,
@@ -192,6 +199,7 @@ namespace DunnCalculator
 
         //oral duyusal hassasiyet
         private int oralSensorySensitivity = 0;
+
         private int[] oralSensorySensitivityIndexes =
         {
             55,
@@ -207,26 +215,28 @@ namespace DunnCalculator
 
         //dikkatsizlik / dikkat dağınıklığı
         private int inattention = 0;
+
         private int[] inattentionIndexes =
         {
-            3 ,
-            4 ,
-            5 ,
-            6 ,
-            7 ,
+            3,
+            4,
+            5,
+            6,
+            7,
             48,
             49
         };
 
         //zayıf kayıt
         private int poorRegistration = 0;
+
         private int[] poorRegistrationIndexes =
         {
-            35  ,
-            42 ,
-            43 ,
-            95 ,
-            99 ,
+            35,
+            42,
+            43,
+            95,
+            99,
             115,
             116,
             125
@@ -234,6 +244,7 @@ namespace DunnCalculator
 
         //duyu hassasiyeti
         private int sensorySensitivity = 0;
+
         private int[] sensorySensitivityIndexes =
         {
             18,
@@ -244,6 +255,7 @@ namespace DunnCalculator
 
         //hareketsiz
         private int sedentary = 0;
+
         private int[] sedentaryIndexes =
         {
             85,
@@ -254,9 +266,10 @@ namespace DunnCalculator
 
         //algısal ince motor
         private int fineMotor = 0;
+
         private int[] fineMotorIndexes =
         {
-            13 ,
+            13,
             118,
             119
         };
@@ -283,7 +296,7 @@ namespace DunnCalculator
 
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {
-            var regex = new Regex("[^1-5]+");
+            var regex = new Regex("[^0-5]+");
             e.Handled = regex.IsMatch(e.Text);
         }
 
@@ -324,7 +337,8 @@ namespace DunnCalculator
                 {
                     MessageBox.Show($"Puan {count} değeri boş veya hatalı !", "Hata");
                     hasError = true;
-                    break; ;
+                    break;
+                    ;
                 }
             }
 
@@ -534,11 +548,24 @@ namespace DunnCalculator
             var scoresWindow = new Scores(list);
             scoresWindow.Show();
         }
-        
+
 
         private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
         {
             SetTextBlocksTexts();
+        }
+
+        private void CleanClicked(object sender, RoutedEventArgs routedEventArgs)
+        {
+            var result = MessageBox.Show("Değerler temizlenecektir. Onaylıyor musunuz?", "Onay", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                foreach (TextBox tb in FindVisualChildren<TextBox>(ScrollViewer))
+                {
+                    tb.Text = "";
+                }
+            }
         }
     }
 }
