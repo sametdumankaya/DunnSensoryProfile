@@ -13,111 +13,119 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <StackPanel Orientation="Vertical">
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" Margin="12">
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-        </StackPanel>
-        <StackPanel Grid.Column="1">
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+        <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" Margin="12">
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-            <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
                        Margin="0,12,0,0"
                        FontSize="12">
-            </TextBlock>
-        </StackPanel>
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Kayıt (Registration) : 32"
+                       Margin="0,12,0,0"
+                       FontSize="12">
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>

@@ -276,6 +276,23 @@ namespace DunnCalculator
 
         private int a, b, c, d, e, f, g, h, i, j, k, l, m, n;
 
+        private IEnumerable<int> aIndexes = Enumerable.Range(1, 8);
+        private IEnumerable<int> bIndexes = Enumerable.Range(9, 9);
+        private IEnumerable<int> cIndexes = Enumerable.Range(18, 11);
+        private IEnumerable<int> dIndexes = Enumerable.Range(29, 18);
+        private IEnumerable<int> eIndexes = Enumerable.Range(47, 7);
+        private IEnumerable<int> fIndexes = Enumerable.Range(54, 12);
+        private IEnumerable<int> gIndexes = Enumerable.Range(66, 9);
+        private IEnumerable<int> hIndexes = Enumerable.Range(75, 10);
+        private IEnumerable<int> iIndexes = Enumerable.Range(85, 7);
+        private IEnumerable<int> jIndexes = Enumerable.Range(92, 4);
+        private IEnumerable<int> kIndexes = Enumerable.Range(96, 4);
+        private IEnumerable<int> lIndexes = Enumerable.Range(100, 17);
+        private IEnumerable<int> mIndexes = Enumerable.Range(117, 6);
+        private IEnumerable<int> nIndexes = Enumerable.Range(123, 2);
+
+        private List<int> zeroPointIndexes = new List<int>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -324,6 +341,7 @@ namespace DunnCalculator
         {
             var count = 1;
             var hasError = false;
+            zeroPointIndexes.Clear();
 
             foreach (TextBox tb in FindVisualChildren<TextBox>(ScrollViewer))
             {
@@ -331,6 +349,12 @@ namespace DunnCalculator
                 {
                     var number = Convert.ToInt32(tb.Text);
                     scores.Add(number);
+
+                    if (number == 0)
+                    {
+                        zeroPointIndexes.Add(count);
+                    }
+
                     count++;
                 }
                 catch (FormatException)
@@ -338,7 +362,6 @@ namespace DunnCalculator
                     MessageBox.Show($"Puan {count} değeri boş veya hatalı !", "Hata");
                     hasError = true;
                     break;
-                    ;
                 }
             }
 
@@ -516,40 +539,39 @@ namespace DunnCalculator
 
             var list = new List<string>
             {
-                $"Kayıt (Registration): {registration}",
-                $"Araştırma (Seeking): {seeking}",
-                $"Hassasiyet (Sensitivity): {sensitivity}",
-                $"Kaçınma (Avoiding): {avoiding}",
-                $"Duyusal Girdi Arama (Sensory Seeking): {sensorySeeking}",
-                $"Duygusal Tepki Arama (Emotionally Reactive): {emotionallyReactive}",
-                $"Düşük Endurans / Tons (Low Endurance / Tone): {lowEnduranceTone}",
-                $"Oral Duyusal Hassasiyet (Oral Sensory Sensitivity): {oralSensorySensitivity}",
-                $"Dikkatsizlik / Dikkat Dağınıklığı (Inattention / Distractibility): {inattention}",
-                $"Zayıf Kayıt (Poor Registration): {poorRegistration}",
-                $"Duyu Hassasiyeti (Sensory Sensitivity): {sensorySensitivity}",
-                $"Hareketsiz (Sedentary): {sedentary}",
-                $"Algısal İnce Motor (Fine Motor / Perceptual): {fineMotor}",
-                $"Duyma İşlemi (Auditory Processing): {a}",
-                $"Görme İşlemi (Visual Processing): {b}",
-                $"Vestibüler Sistem (Vestibular Processing): {c}",
-                $"Dokunma İşlemi (Touch Processing): {d}",
-                $"Çoklu Duyusal İşlem (Multisensory Processing): {e}",
-                $"Oral Duyusal İşlem (Oral Sensory Processing): {f}",
-                $"Endurans ve Tonusla İlgili Duyusal İşlem (Sensory Processing Related to Endurance / Tone): {g}",
-                $"Hareket ve Vücut Pozisyonu ile İlgili Düzenlemeler (Modulation Related to Body Position and Movement): {h}",
-                $"Aktivite Seviyesini Etkileyen Hareket Düzenlemeleri (Modulation of Movement Affecting Activity Level): {i}",
-                $"Duygusal Cevapları Etkileyen Duyusal Girdilerin Düzenlenmesi (Modulation of Sensory Input Affecting Emotional Responses): {j}",
-                $"Duygusal Cevapları ve Aktivite Seviyesini Etkileyen Görsel Girdilerin Düzenlenmesi (Modulation of Visual Input Affecting Emotional Responses and Activity Level): {k}",
-                $"Duygusal ve Sosyal Cevaplar (Emotional / Social Responses): {l}",
-                $"Duyusal İşlemin Davranışsal Sonuçları (Behavioral Outcomes of Sensory Processing): {m}",
-                $"Tepki Verme Eşiğini Tanımlayan Maddeler (Items Indicating Thresholds for Response): {n}"
+                $"Kayıt (Registration){GetEmptyPointsString(registrationIndexes, zeroPointIndexes)}: {registration}",
+                $"Araştırma (Seeking){GetEmptyPointsString(seekingIndexes, zeroPointIndexes)}: {seeking}",
+                $"Hassasiyet (Sensitivity){GetEmptyPointsString(sensitivityIndexes, zeroPointIndexes)}: {sensitivity}",
+                $"Kaçınma (Avoiding){GetEmptyPointsString(avoidingIndexes, zeroPointIndexes)}: {avoiding}",
+                $"Duyusal Girdi Arama (Sensory Seeking){GetEmptyPointsString(sensorySeekingIndexes, zeroPointIndexes)}: {sensorySeeking}",
+                $"Duygusal Tepki Arama (Emotionally Reactive){GetEmptyPointsString(emotionallyReactiveIndexes, zeroPointIndexes)}: {emotionallyReactive}",
+                $"Düşük Endurans / Tons (Low Endurance / Tone){GetEmptyPointsString(lowEnduranceToneIndexes, zeroPointIndexes)}: {lowEnduranceTone}",
+                $"Oral Duyusal Hassasiyet (Oral Sensory Sensitivity){GetEmptyPointsString(oralSensorySensitivityIndexes, zeroPointIndexes)}: {oralSensorySensitivity}",
+                $"Dikkatsizlik / Dikkat Dağınıklığı (Inattention / Distractibility){GetEmptyPointsString(inattentionIndexes, zeroPointIndexes)}: {inattention}",
+                $"Zayıf Kayıt (Poor Registration){GetEmptyPointsString(poorRegistrationIndexes, zeroPointIndexes)}: {poorRegistration}",
+                $"Duyu Hassasiyeti (Sensory Sensitivity){GetEmptyPointsString(sensorySensitivityIndexes, zeroPointIndexes)}: {sensorySensitivity}",
+                $"Hareketsiz (Sedentary){GetEmptyPointsString(sedentaryIndexes, zeroPointIndexes)}: {sedentary}",
+                $"Algısal İnce Motor (Fine Motor / Perceptual){GetEmptyPointsString(fineMotorIndexes, zeroPointIndexes)}: {fineMotor}",
+                $"A. Duyma İşlemi (Auditory Processing){GetEmptyPointsString(aIndexes, zeroPointIndexes)}: {a}",
+                $"B. Görme İşlemi (Visual Processing){GetEmptyPointsString(bIndexes, zeroPointIndexes)}: {b}",
+                $"C. Vestibüler Sistem (Vestibular Processing){GetEmptyPointsString(cIndexes, zeroPointIndexes)}: {c}",
+                $"D. Dokunma İşlemi (Touch Processing){GetEmptyPointsString(dIndexes, zeroPointIndexes)}: {d}",
+                $"E. Çoklu Duyusal İşlem (Multisensory Processing){GetEmptyPointsString(eIndexes, zeroPointIndexes)}: {e}",
+                $"F. Oral Duyusal İşlem (Oral Sensory Processing){GetEmptyPointsString(fIndexes, zeroPointIndexes)}: {f}",
+                $"G. Endurans ve Tonusla İlgili Duyusal İşlem (Sensory Processing Related to Endurance / Tone){GetEmptyPointsString(gIndexes, zeroPointIndexes)}: {g}",
+                $"H. Hareket ve Vücut Pozisyonu ile İlgili Düzenlemeler (Modulation Related to Body Position and Movement){GetEmptyPointsString(hIndexes, zeroPointIndexes)}: {h}",
+                $"I. Aktivite Seviyesini Etkileyen Hareket Düzenlemeleri (Modulation of Movement Affecting Activity Level){GetEmptyPointsString(iIndexes, zeroPointIndexes)}: {i}",
+                $"J. Duygusal Cevapları Etkileyen Duyusal Girdilerin Düzenlenmesi (Modulation of Sensory Input Affecting Emotional Responses){GetEmptyPointsString(jIndexes, zeroPointIndexes)}: {j}",
+                $"K. Duygusal Cevapları ve Aktivite Seviyesini Etkileyen Görsel Girdilerin Düzenlenmesi (Modulation of Visual Input Affecting Emotional Responses and Activity Level){GetEmptyPointsString(kIndexes, zeroPointIndexes)}: {k}",
+                $"L. Duygusal ve Sosyal Cevaplar (Emotional / Social Responses){GetEmptyPointsString(lIndexes, zeroPointIndexes)}: {l}",
+                $"M. Duyusal İşlemin Davranışsal Sonuçları (Behavioral Outcomes of Sensory Processing){GetEmptyPointsString(mIndexes, zeroPointIndexes)}: {m}",
+                $"N. Tepki Verme Eşiğini Tanımlayan Maddeler (Items Indicating Thresholds for Response){GetEmptyPointsString(nIndexes, zeroPointIndexes)}: {n}"
             };
 
             var scoresWindow = new Scores(list);
             scoresWindow.Show();
         }
-
-
+        
         private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
         {
             SetTextBlocksTexts();
@@ -566,6 +588,21 @@ namespace DunnCalculator
                     tb.Text = "";
                 }
             }
+        }
+
+        private string GetEmptyPointsString(IEnumerable<int> scoreIndexes, IEnumerable<int> zeroIndexes)
+        {
+            var result = " ";
+
+            foreach (var zero in zeroIndexes)
+            {
+                if (scoreIndexes.Contains(zero))
+                {
+                    result += $"({zero}) ";
+                }
+            }
+
+            return result;
         }
     }
 }
