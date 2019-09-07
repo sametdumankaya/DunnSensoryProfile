@@ -7,8 +7,13 @@
         Loaded="Scores_OnLoaded"
         WindowStartupLocation="CenterScreen"
         x:Name="Window"
+        WindowState="Maximized"
         Title="Skorlar" Height="700" Width="700">
     <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -127,5 +132,11 @@
                 </TextBlock>
             </StackPanel>
         </ScrollViewer>
+        <Button Grid.Row="1"
+                Cursor="Hand"
+                Content="Dosyaya Aktar"
+                Click="Button_Click"
+                FontSize="24"
+                Grid.Column="1"/>
     </Grid>
 </Window>
