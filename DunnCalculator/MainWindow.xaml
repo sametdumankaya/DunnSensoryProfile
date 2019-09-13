@@ -43,7 +43,7 @@
                      TextAlignment="Left"
                      VerticalContentAlignment="Center"
                      FontSize="16"
-                     Margin="12"/>
+                     Margin="6"/>
             <Grid Grid.Column="1" Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="3*"/>
@@ -56,7 +56,7 @@
                          MaxLength="2"
                          VerticalContentAlignment="Center"
                          FontSize="16"
-                         Margin="12"/>
+                         Margin="6"/>
                 <TextBlock Text="-"
                            Grid.Row="1"
                            Grid.Column="1"
@@ -70,7 +70,7 @@
                          TextAlignment="Left"
                          VerticalContentAlignment="Center"
                          FontSize="16"
-                         Margin="12"/>
+                         Margin="6"/>
             </Grid>
         </Grid>
         <TextBlock Text="Dunn Duyu Profili"

@@ -132,11 +132,19 @@
                 </TextBlock>
             </StackPanel>
         </ScrollViewer>
-        <Button Grid.Row="1"
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="1"
                 Cursor="Hand"
                 Content="Dosyaya Aktar"
                 Click="Button_Click"
                 FontSize="24"
+                Height="36"
                 Grid.Column="1"/>
+        </Grid>
     </Grid>
 </Window>
