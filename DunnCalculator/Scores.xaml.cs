@@ -5,6 +5,8 @@ using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using OfficeOpenXml;
+using Microsoft.Win32;
 
 namespace DunnCalculator
 {
@@ -40,14 +42,16 @@ namespace DunnCalculator
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var fileName = $"{name}_{ageYear}_{ageMonth}-{DateTime.Today.ToString("dd-MM-yyyy")}.txt";
-            using (StreamWriter writetext = new StreamWriter(fileName))
+            using (var p = new ExcelPackage())
             {
-                writetext.WriteLine($"İsim: {name}");
-                writetext.WriteLine($"Yaş (Yıl - Ay): {ageYear} - {ageMonth}");
-                writetext.WriteLine("");
-                writetext.WriteLine("------------------------------------------------------------------------------");
-                writetext.WriteLine("");
+                var worksheet = p.Workbook.Worksheets.Add("Sheet1");
+
+                worksheet.Cells[1, 1].Value = "İsim";
+                worksheet.Cells[2, 1].Value = $"{name}";
+                worksheet.Cells[1, 2].Value = "Yaş (Yıl - Ay)";
+                worksheet.Cells[2, 2].Value = $"{ageYear} - {ageMonth}";
+
+                int columnNumber = 3;
 
                 foreach (var item in results)
                 {
@@ -57,14 +61,25 @@ namespace DunnCalculator
                     var point = splitted2[0];
                     var interpretation = splitted2[1].Replace(")", "");
 
-                    writetext.WriteLine(category.Trim());
-                    writetext.WriteLine(point.Trim());
-                    writetext.WriteLine(interpretation.Trim());
-                    writetext.WriteLine();
+                    worksheet.Cells[1, columnNumber].Value = category;
+                    worksheet.Cells[2, columnNumber].Value = point;
+                    worksheet.Cells[3, columnNumber].Value = interpretation;
+                    columnNumber++;
+                }
+
+                worksheet.Cells.AutoFitColumns();
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "Excel dosyası (*.xlsx)|*.xlsx";
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+                var result = saveFileDialog.ShowDialog();
+                if (result.HasValue && result.Value)
+                {
+                    var file = saveFileDialog.FileName;
+                    p.SaveAs(new FileInfo(file));
+                    Process.Start(file);
                 }
             }
-
-            Process.Start(fileName);
         }
     }
 }
