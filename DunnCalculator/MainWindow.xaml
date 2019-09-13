@@ -38,7 +38,7 @@
                        HorizontalAlignment="Right"
                        VerticalAlignment="Center"
                        FontSize="16"/>
-            <TextBox Grid.Column="1"
+            <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  Grid.Column="1"
                      Name="patientName"
                      TextAlignment="Left"
                      VerticalContentAlignment="Center"
@@ -50,7 +50,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="3*"/>
                 </Grid.ColumnDefinitions>
-                <TextBox Name="patientAgeYear"
+                <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  Name="patientAgeYear"
                          PreviewTextInput="NumberValidationTextBoxAll"
                          TextAlignment="Left"
                          MaxLength="2"
@@ -63,7 +63,7 @@
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="24"/>
-                <TextBox Grid.Column="2"
+                <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  Grid.Column="2"
                          MaxLength="2"
                          Name="patientAgeMonth"
                          PreviewTextInput="NumberValidationTextBoxAll"
@@ -95,7 +95,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1"
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1"
                              Width="40" MaxLength="1"
                              HorizontalAlignment="Left"
                              >
@@ -104,7 +104,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -112,7 +112,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -129,7 +129,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1"
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1"
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -138,7 +138,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -146,7 +146,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -163,7 +163,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -172,7 +172,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -180,7 +180,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -197,7 +197,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -206,7 +206,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -214,7 +214,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -231,7 +231,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -240,7 +240,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -248,7 +248,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -265,7 +265,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -274,7 +274,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -282,7 +282,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -299,7 +299,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -308,7 +308,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -316,7 +316,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -333,7 +333,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -342,7 +342,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -350,7 +350,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -367,7 +367,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -376,7 +376,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -384,7 +384,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -401,7 +401,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -410,7 +410,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -418,7 +418,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -435,7 +435,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -444,7 +444,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -452,7 +452,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -469,7 +469,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -478,7 +478,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -486,7 +486,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -503,7 +503,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -512,7 +512,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -520,7 +520,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -537,7 +537,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -546,7 +546,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -554,7 +554,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -571,7 +571,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -580,7 +580,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -588,7 +588,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -605,7 +605,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -614,7 +614,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -622,7 +622,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -639,7 +639,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -648,7 +648,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -656,7 +656,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -673,7 +673,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -682,7 +682,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -690,7 +690,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -707,7 +707,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -716,7 +716,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -724,7 +724,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -741,7 +741,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -750,7 +750,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -758,7 +758,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -775,7 +775,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -784,7 +784,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -792,7 +792,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -809,7 +809,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -818,7 +818,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -826,7 +826,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -843,7 +843,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -852,7 +852,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -860,7 +860,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -877,7 +877,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -886,7 +886,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -894,7 +894,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -911,7 +911,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -920,7 +920,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -928,7 +928,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -945,7 +945,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -954,7 +954,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -962,7 +962,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -979,7 +979,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -988,7 +988,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -996,7 +996,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1013,7 +1013,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1022,7 +1022,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1030,7 +1030,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1047,7 +1047,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1056,7 +1056,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1064,7 +1064,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1081,7 +1081,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1090,7 +1090,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1098,7 +1098,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1115,7 +1115,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1124,7 +1124,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1132,7 +1132,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1149,7 +1149,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1158,7 +1158,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1166,7 +1166,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1183,7 +1183,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1192,7 +1192,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1200,7 +1200,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1217,7 +1217,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1226,7 +1226,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1234,7 +1234,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1251,7 +1251,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1260,7 +1260,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1268,7 +1268,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1285,7 +1285,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1294,7 +1294,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1302,7 +1302,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1319,7 +1319,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1328,7 +1328,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1336,7 +1336,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1353,7 +1353,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1362,7 +1362,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1370,7 +1370,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1387,7 +1387,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1396,7 +1396,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1404,7 +1404,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1421,7 +1421,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1430,7 +1430,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1438,7 +1438,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1455,7 +1455,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1464,7 +1464,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1472,7 +1472,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="5" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>
@@ -1489,7 +1489,7 @@
                     <TextBlock Grid.Column="0" 
                                HorizontalAlignment="Right">
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="1" 
                              Width="40" MaxLength="1" 
                              HorizontalAlignment="Left"
                              >
@@ -1498,7 +1498,7 @@
                                HorizontalAlignment="Right"
                                >
                     </TextBlock>
-                    <TextBox PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
+                    <TextBox MouseDoubleClick="SelectAddress" GotKeyboardFocus="SelectAddress" PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"  PreviewTextInput="NumberValidationTextBox" Grid.Column="3" 
                              HorizontalAlignment="Left"
                              Width="40" MaxLength="1">
                     </TextBox>

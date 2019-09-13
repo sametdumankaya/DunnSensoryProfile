@@ -622,6 +622,29 @@ namespace DunnCalculator
             InitializeComponent();
         }
 
+        private void SelectAddress(object sender, RoutedEventArgs e)
+        {
+            TextBox tb = (sender as TextBox);
+            if (tb != null)
+            {
+                tb.SelectAll();
+            }
+        }
+
+        private void SelectivelyIgnoreMouseButton(object sender,
+            MouseButtonEventArgs e)
+        {
+            TextBox tb = (sender as TextBox);
+            if (tb != null)
+            {
+                if (!tb.IsKeyboardFocusWithin)
+                {
+                    e.Handled = true;
+                    tb.Focus();
+                }
+            }
+        }
+
         private string GetInterpretation(List<Dictionary<string, string>> ranges, int value)
         {
             foreach (var item in ranges)
@@ -704,6 +727,7 @@ namespace DunnCalculator
             var count = 1;
             var hasError = false;
             zeroPointIndexes.Clear();
+            scores.Clear();
 
             foreach (TextBox tb in FindVisualChildren<TextBox>(ScrollViewer))
             {
